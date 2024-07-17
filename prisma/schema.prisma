@@ -1,12 +1,10 @@
-// prisma/schema.prisma
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL") // .env 파일에 데이터베이스 URL을 저장합니다.
+  url      = env("DATABASE_URL")
 }
 
 model User {
