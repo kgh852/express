@@ -29,7 +29,7 @@ app.post('/user/register', async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: '내부 서버 오류' })
     }
-});
+})
 
 app.post('/user/login', async (req, res) => {
     try {
