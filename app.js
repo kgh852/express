@@ -24,7 +24,7 @@ app.post('/user/register', async (req, res) => {
                 username,
                 password: hashedPassword
             }
-        });
+        })
         res.status(201).json(createUser)
     } catch (error) {
         res.status(500).json({ error: '내부 서버 오류' })
