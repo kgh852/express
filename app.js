@@ -4,7 +4,7 @@ const PORT = 3000
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient();
+const prisma = new PrismaClient()
 
 app.use(express.json())
 
